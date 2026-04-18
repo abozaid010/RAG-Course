@@ -1,0 +1,278 @@
+{
+
+    "projects": [
+      {
+        "google_map_link": "https://maps.app.goo.gl/Pf1FXD7VQKjFm57j6",
+        "video_url": "https://web.facebook.com/watch/?v=1196644342120940",
+        "facility_management": {
+          "rating": 9,
+          "description": " العالمية، وهي واحدة من كبرى الشركات المتخصصة في إدارة وتشغيل المشاريع التجارية والإدارية الكبرى في مصر والشرق الأوسط، بينما الشركة المطورة للمشروع هي شركة البروج مصر للتطوير العقاري (AlBorouj Misr). \nأبرز المعلومات عن إدارة وتشغيل\n 6ixty Heliopolis:\nشركة الإدارة: سافيلز (Savills)، المعروفة بإدارتها لمشاريع ضخمة مثل مول مصر وذا أرك.",
+          "name": "شركة سافيلز (Savills) "
+        },
+        "building_types_images": {
+          "commercial": [
+            {
+              "fileId": "public_0029355b",
+              "url": "https://api.lenaai.net/images/public_0029355b"
+            },
+            {
+              "fileId": "public_f6c9fc5c",
+              "url": "https://api.lenaai.net/images/public_f6c9fc5c"
+            }
+          ]
+        },
+        "longitude": 31.3611,
+        "gated": true,
+        "start_price": 8513221,
+        "images": [
+          {
+            "fileId": "public_62b89d0d",
+            "url": "https://api.lenaai.net/images/public_62b89d0d"
+          },
+          {
+            "fileId": "public_08a641e3",
+            "url": "https://api.lenaai.net/images/public_08a641e3"
+          },
+          {
+            "fileId": "public_9856c2fe",
+            "url": "https://api.lenaai.net/images/public_9856c2fe"
+          }
+        ],
+        "client_id": "public",
+        "updated_at": "2026-04-16T18:03:17.333673Z",
+        "city": "cairo",
+        "units_count": 14,
+        "properties_types": [
+          "commercial"
+        ],
+        "area": 8,
+        "master_plan": {
+          "fileId": "public_d1e8ec77",
+          "url": "https://api.lenaai.net/images/public_d1e8ec77"
+        },
+        "payment_plans": [
+          {
+            "extra_payments": [],
+            "description": "",
+            "installment_increasing_percentage": 0,
+            "cache_discount": 0.4,
+            "id": "22975e23-7879-4d82-9df6-bcdea893c0a5",
+            "name": "25 downpayment, 4 years",
+            "installment_years": 4,
+            "is_default": true,
+            "downpayment_percentage": 0.25,
+            "maintenance_fee": 0.1
+          }
+        ],
+        "phases": [],
+        "start_prices": {
+          "commercial": 43647120,
+          "admin": 9530561,
+          "clinic": 8513221
+        },
+        "cache_discount": 0,
+        "start_areas": {
+          "commercial": 128.141865,
+          "admin": 64.83375,
+          "clinic": 60.59232
+        },
+        "delivery_date": 1,
+        "developer_id": "f727cfcf-0132-423f-a744-6185f895d7b8",
+        "description": "يعتبر مول سيكستي هيليوبوليس شيراتون Mall 6ixty Heliopolis Sheraton البوابة الاستثمارية التي قدمتها شركة البروج للتطوير العقاري في منطقة شيراتون ليصبح نقطة تحول فارقة في قطاع الاستثمار العقاري وخاصة للمولات التي تُقدم خدمات تجارية وإدارية، كما أن موقع المول يجعل زواره يصلون إليه بسهولة من خلال الطرق والمحاور الرئيسية المُحيطة به، كما أنه يقع على مقربة من أهم المعالم الأساسية والمراكز الخدمية المختلفة بالقاهرة الجديدة.\n\nيتمتع بتصميمه الهندسي المبتكر الذي يواكب أحدث الطُرز والاتجاهات المعمارية في العالم، ولم يقتصر التخطيط الإبداعي على الديكورات والخطط الإنشائية بالداخل فقط، بل تمتد إلى الواجهات الخارجية التي تعكس مزيد من التحضر والفخامة، فهي مصنوعة من الزجاج العازل للضوضاء حتى يُبقي العملاء مُتصلين بالعالم الخارجي من حولهم، فضلا عن المساحة الشاسعة التي يستحوذ عليها مشروع سيكستي هيليوبوليس حتى يوفر عدد هائل من المرافق الخدمية المتنوعة التي تجعله بمثابة وجهة مثالية للترفيه والتسوق في القاهرة الجديدة",
+        "id": "00d26da6-9a81-48fe-bd83-10e2f350df3e",
+        "developer_name": "AlBorouj Masr",
+        "start_area": 60.59232,
+        "location_landmark": "5 minutes away from  Cairo airport .",
+        "district": "new heliopolis",
+        "orientation_url": "https://www.youtube.com/watch?v=9YN_UO7UEhY",
+        "country": "Egypt",
+        "latitude": 30.0947,
+        "finishing_type": [
+          "core & shell"
+        ],
+        "author": "abozaid@lenaai.net",
+        "ar_name": "6 سيكستي هليوبوليس",
+        "en_name": "6ixty heliopolies"
+      },
+      {
+        "google_map_link": "https://maps.app.goo.gl/yRUHQVUuSiwLJNRu8",
+        "video_url": "",
+        "building_types_images": {
+          "chalet": [
+            {
+              "fileId": "public_249e9059",
+              "url": "https://api.lenaai.net/images/public_249e9059"
+            },
+            {
+              "fileId": "public_09e3ab6f",
+              "url": "https://api.lenaai.net/images/public_09e3ab6f"
+            },
+            {
+              "fileId": "public_78bcf8e3",
+              "url": "https://api.lenaai.net/images/public_78bcf8e3"
+            }
+          ]
+        },
+        "start_price": 9429169,
+        "gated": false,
+        "images": [
+          {
+            "fileId": "public_1a562bc2",
+            "url": "https://api.lenaai.net/images/public_1a562bc2"
+          },
+          {
+            "fileId": "public_346a9dc4",
+            "url": "https://api.lenaai.net/images/public_346a9dc4"
+          },
+          {
+            "fileId": "public_74ff70cd",
+            "url": "https://api.lenaai.net/images/public_74ff70cd"
+          }
+        ],
+        "client_id": "public",
+        "updated_at": "2026-04-15T15:41:49.956463Z",
+        "city": "north coast",
+        "units_count": 238,
+        "area": 470,
+        "properties_types": [
+          "chalet",
+          "townhouse",
+          "condo",
+          "house"
+        ],
+        "master_plan": {
+          "fileId": "public_0cb680ec",
+          "url": "https://api.lenaai.net/images/public_0cb680ec"
+        },
+        "payment_plans": [
+          {
+            "name": "5 downpayment, 9 years",
+            "description": "",
+            "cache_discount": 0.4,
+            "reservation_amount_percentage": 0,
+            "installment_years": 9,
+            "is_default": true,
+            "downpayment_percentage": 0.05,
+            "maintenance_fee": 0.05
+          }
+        ],
+        "phases": [],
+        "start_prices": {
+          "cabana": 9429169,
+          "villa": 87873638
+        },
+        "start_areas": {
+          "cabana": 50,
+          "villa": 235
+        },
+        "delivery_date": 3,
+        "developer_id": "crysta",
+        "description": "🏖️ كريستا ماونتن فيو الساحل الشمالي – Crysta North Coast من تطوير شركة ماونتن فيو العقارية  📍 الموقع الكيلو 120 – طريق الإسكندرية / مطروح  30 دقيقة من مطار العلمين الدولي   Light House: منارة مميزة كرمز للمشروع ومكان للاسترخاء  Club House: نادي اجتماعي فاخر بخدمات متعددة  🏨  ",
+        "id": "01325d66-1dde-4913-be93-d99bf08c7057",
+        "developer_name": "Mountain View",
+        "start_area": 50,
+        "types_photos": {
+          "appartment": [
+            "https://www.lenaai.net/_next/image?url=https%3A%2F%2Fapi.lenaai.net%2Fimages%2Fdemo_8b4234b3&w=1920&q=75"
+          ]
+        },
+        "district": "sidi abdel rahman",
+        "country": "Egypt",
+        "finishing_type": [
+          "semi finished",
+          "fully finished"
+        ],
+        "ar_name": "كريستا",
+        "en_name": "crysta"
+      },
+      {
+        "google_map_link": "https://maps.app.goo.gl/9o7TJS5sNnhmUnBi7",
+        "video_url": "https://www.youtube.com/shorts/SoUfBiNTl7w",
+        "building_types_images": {
+          "medical": [
+            {
+              "fileId": "public_75009caa",
+              "url": "https://api.lenaai.net/images/public_75009caa"
+            }
+          ],
+          "admin": [
+            {
+              "fileId": "public_533ef55b",
+              "url": "https://api.lenaai.net/images/public_533ef55b"
+            }
+          ]
+        },
+        "start_price": 1561770,
+        "gated": true,
+        "images": [
+          {
+            "fileId": "public_a1426184",
+            "url": "https://api.lenaai.net/images/public_a1426184"
+          },
+          {
+            "fileId": "public_1770f240",
+            "url": "https://api.lenaai.net/images/public_1770f240"
+          },
+          {
+            "fileId": "public_b82c73dc",
+            "url": "https://api.lenaai.net/images/public_b82c73dc"
+          }
+        ],
+        "client_id": "public",
+        "updated_at": "2026-04-15T15:41:50.511155Z",
+        "city": "6 october",
+        "units_count": 19,
+        "properties_types": [
+          "admin",
+          "medical"
+        ],
+        "area": 1,
+        "master_plan": {
+          "fileId": "public_09a76f63",
+          "url": "https://api.lenaai.net/images/public_09a76f63"
+        },
+        "payment_plans": [
+          {
+            "extra_payments": [],
+            "description": "",
+            "installment_increasing_percentage": 0,
+            "cache_discount": 0.25,
+            "id": "ebbd89e6-fa5e-41cc-b80e-3b4d1b4db242",
+            "name": "10 downpayment, 5 years",
+            "is_common": false,
+            "is_default": true,
+            "installment_years": 5,
+            "delivery_payment_percentage": 0,
+            "downpayment_percentage": 0.1,
+            "maintenance_fee": 0.1
+          }
+        ],
+        "cache_discount": 0,
+        "phases": [],
+        "start_prices": {
+          "admin": 1561770,
+          "clinic": 1860495,
+          "retail": 3730308.75
+        },
+        "start_areas": {
+          "admin": 21,
+          "clinic": 26,
+          "retail": 25
+        },
+        "delivery_date": 0.5,
+        "developer_id": "c5c28f06-23ad-48bd-8cfa-53b9c800ce11",
+        "description": "يُعد مشروع Axis Three Business Mall من المشروعات التجارية والإدارية المميزة في مدينة السادس من أكتوبر، وهو أول مشروعات شركة URBNZ Developments في السوق العقاري المصري. يقع المشروع في منطقة التوسعات الشمالية بمدينة أكتوبر، وهي من المناطق الحيوية التي تضم عددًا كبيرًا من الكمبوندات السكنية الراقية ويقطنها أكثر من 350 ألف نسمة، مما يجعله موقعًا مثاليًا للأنشطة التجارية والخدمية.\n\nالمشروع عبارة عن مول متعدد الاستخدامات يضم وحدات تجارية وإدارية وطبية بمساحات متنوعة تناسب مختلف الأنشطة الاستثمارية، حيث تبدأ مساحات الوحدات التجارية من نحو 31 مترًا مربعًا، بينما تبدأ مساحات الوحدات الإدارية والطبية من حوالي 45 مترًا مربعًا.\n\nيتميز Axis Mall بتصميم معماري عصري يعتمد على الاستغلال الأمثل للمساحات مع توفير بيئة عمل متكاملة للمستثمرين والزوار، كما يتم تسليم الوحدات تشطيب كامل مع التكييفات لضمان أعلى مستوى من الجودة والراحة.",
+        "id": "01427153-774e-42f4-85c1-2a177280d02f",
+        "developer_name": "urbnz developments",
+        "start_area": 21,
+        "district": "northern expansions ",
+        "country": "Egypt",
+        "finishing_type": [
+          "fully finished"
+        ],
+        "author": "medhat@lenaai.net",
+        "ar_name": "اكسس مول",
+        "en_name": "axis 3 business mall"
+      }
+    ],
+ }
