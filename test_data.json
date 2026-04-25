@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "en_name": "Palm Hills New Cairo",
+      "ar_name": "بالم هيلز القاهرة الجديدة",
+      "city": "Cairo",
+      "district": "New Cairo",
+      "developer_name": "Palm Hills Development",
+      "properties_types": ["villa", "apartment", "townhouse"],
+      "start_price": 5000000,
+      "description": "A luxury residential community in New Cairo offering various property types with modern amenities and green spaces."
+    },
+    {
+      "id": "2", 
+      "en_name": "Mountain View New Capital",
+      "ar_name": "ماونتن فيو العاصمة الإدارية",
+      "city": "New Capital",
+      "district": "R7",
+      "developer_name": "Mountain View",
+      "properties_types": ["apartment", "penthouse", "townhouse"],
+      "start_price": 3500000,
+      "description": "A modern residential project in the New Administrative Capital featuring smart home technology and sustainable design."
+    },
+    {
+      "id": "3",
+      "en_name": "Sodic East Town",
+      "ar_name": "سوديك إيست تاون",
+      "city": "Cairo", 
+      "district": "New Cairo",
+      "developer_name": "Sodic",
+      "properties_types": ["apartment", "duplex", "penthouse"],
+      "start_price": 4200000,
+      "description": "A premium residential development offering contemporary living spaces with comprehensive facilities in New Cairo."
+    }
+  ]
+}

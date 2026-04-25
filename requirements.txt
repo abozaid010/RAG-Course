@@ -1,13 +1,155 @@
+# =============================================================================
+# DEPENDENCIES FOR RAG SYSTEM - ChromaDB + DeepSeek LLM
+# =============================================================================
+# 
+# This file contains all the Python packages needed for our RAG system.
+# Each dependency serves a specific purpose in the retrieval-augmented generation workflow.
+#
+# INSTALLATION:
+# pip install -r requirements.txt
+#
+# For production deployment, consider using virtual environments:
+# python -m venv venv
+# source venv/bin/activate  # On Windows: venv\Scripts\activate
+# pip install -r requirements.txt
+# =============================================================================
+
+# =============================================================================
+# WEB FRAMEWORK & API SERVER
+# =============================================================================
+
+# FastAPI - Modern, fast web framework for building APIs
+# WHY NEEDED: Provides the REST API interface for our RAG system
+# FEATURES: Automatic API documentation, validation, serialization, async support
+# ALTERNATIVES: Flask, Django (but FastAPI is best for modern async APIs)
 fastapi==0.110.0
+
+# Uvicorn - ASGI server for running FastAPI applications
+# WHY NEEDED: Serves our FastAPI application in production
+# FEATURES: High performance, async support, WebSocket support
+# [standard] includes extra dependencies for better performance and monitoring
 uvicorn[standard]==0.29.0
+
+# Pydantic - Data validation and settings management
+# WHY NEEDED: Validates incoming API requests and serializes responses
+# FEATURES: Type hints, automatic validation, serialization, documentation generation
+# INTEGRATION: Deeply integrated with FastAPI for request/response handling
 pydantic==2.6.4
 
-httpx==0.27.0   # async LLM calls (replace requests)
-tenacity==8.2.3 # retries
+# =============================================================================
+# HTTP CLIENT & API COMMUNICATION
+# =============================================================================
 
+# HTTPX - Async HTTP client for making API calls
+# WHY NEEDED: Communicates with DeepSeek's LLM API asynchronously
+# FEATURES: Async/await support, HTTP/2, connection pooling, timeouts
+# COMPARISON: Replaces requests library with async capabilities for better performance
+httpx==0.27.0
+
+# Tenacity - Retry library for handling transient failures
+# WHY NEEDED: Makes our LLM API calls more reliable by automatically retrying failed requests
+# FEATURES: Exponential backoff, retry conditions, jitter, stop conditions
+# USE CASE: Handles network issues, rate limits, temporary API failures
+tenacity==8.2.3
+
+# =============================================================================
+# VECTOR DATABASE & EMBEDDINGS
+# =============================================================================
+
+# ChromaDB - Open-source vector database for AI applications
+# WHY NEEDED: Stores document embeddings and enables fast similarity search
+# FEATURES: Vector storage, similarity search, metadata filtering, easy integration
+# ROLE IN RAG: Provides the "Retrieval" component - finds relevant documents
 chromadb==0.4.24
 
-python-dotenv==1.0.1  # env vars
-orjson==3.10.1        # faster JSON
+# Sentence Transformers - Pre-trained models for text embeddings
+# WHY NEEDED: Converts text documents to numerical vectors for similarity search
+# FEATURES: Pre-trained models, multiple languages, GPU support, easy integration
+# MODEL USED: all-MiniLM-L6-v2 (lightweight, fast, good quality)
+sentence-transformers==2.7.0
 
-redis==5.0.3          # optional caching
+# =============================================================================
+# ENVIRONMENT & CONFIGURATION
+# =============================================================================
+
+# python-dotenv - Environment variable management
+# WHY NEEDED: Loads environment variables from .env files for configuration
+# FEATURES: .env file support, environment variable loading, configuration management
+# SECURITY: Keeps API keys and sensitive data out of source code
+python-dotenv==1.0.1
+
+# orjson - Fast JSON parsing and serialization
+# WHY NEEDED: Improves performance of JSON operations in our API
+# FEATURES: Faster than standard json library, better memory efficiency
+# USE CASE: Parsing API requests, serializing responses, handling large JSON data
+orjson==3.10.1
+
+# =============================================================================
+# OPTIONAL ENHANCEMENTS
+# =============================================================================
+
+# Redis - In-memory data structure store (optional)
+# WHY NEEDED: Caching for improved performance and rate limiting
+# FEATURES: In-memory storage, data structures, pub/sub, clustering
+# USE CASES: Cache LLM responses, rate limiting, session storage
+# NOTE: Optional - system works without Redis but benefits from caching
+redis==5.0.3
+
+# =============================================================================
+# DEVELOPMENT & TESTING (Optional for development)
+# =============================================================================
+
+# pytest - Testing framework (uncomment if needed for testing)
+# pytest==8.1.1
+
+# pytest-asyncio - Async testing support for pytest (uncomment if needed)
+# pytest-asyncio==0.23.6
+
+# black - Code formatting (uncomment if needed for development)
+# black==24.4.0
+
+# flake8 - Code linting (uncomment if needed for development)
+# flake8==7.0.0
+
+# =============================================================================
+# DEPENDENCY EXPLANATIONS BY RAG COMPONENT:
+# =============================================================================
+# 
+# 1. RETRIEVAL COMPONENT:
+#    - chromadb: Vector database for storing and searching embeddings
+#    - sentence-transformers: Converting text to vector embeddings
+# 
+# 2. AUGMENTATION COMPONENT:
+#    - No specific dependencies (built-in Python features)
+# 
+# 3. GENERATION COMPONENT:
+#    - httpx: Making async HTTP calls to DeepSeek API
+#    - tenacity: Retry logic for reliable API communication
+# 
+# 4. API SERVER:
+#    - fastapi: Web framework for REST API
+#    - uvicorn: ASGI server for running the application
+#    - pydantic: Data validation and serialization
+# 
+# 5. CONFIGURATION:
+#    - python-dotenv: Environment variable management
+#    - orjson: Fast JSON processing
+# 
+# 6. PERFORMANCE:
+#    - redis: Optional caching for improved response times
+# =============================================================================
+
+# =============================================================================
+# VERSION NOTES:
+# =============================================================================
+# 
+# - Versions are pinned for reproducibility in production
+# - For development, you might use broader version ranges
+# - Regular updates recommended for security patches
+# - Test compatibility when updating major versions
+# 
+# COMPATIBILITY:
+# - Python 3.8+ required for all dependencies
+# - Some packages may have additional system requirements
+# - Check individual package documentation for specific requirements
+# =============================================================================
