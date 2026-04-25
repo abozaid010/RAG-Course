@@ -99,11 +99,170 @@ async def ask_llm(prompt: str):
 if __name__ == "__main__":
     import asyncio
     async def main():
+
+        data = """
+
+
+                {
+  "brand": "Toshiba",
+  "category": "Dishwashers",
+  "models": [
+    {
+      "model_number": "DW-GZ202",
+      "series": "Gaza202",
+      "capacity": "12 place settings",
+      "energy_efficiency": "A+++",
+      "release_year": 2021,
+      "insurance_years": {
+        "standard_warranty": 2,
+        "extended_warranty_available": true,
+        "max_insurance_years": 5
+      },
+      "features": ["Smart Wash", "Half Load", "Delay Start", "AquaStop"]
+    },
+    {
+      "model_number": "DW-3680",
+      "series": "Premium",
+      "capacity": "15 place settings",
+      "energy_efficiency": "A++",
+      "release_year": 2022,
+      "insurance_years": {
+        "standard_warranty": 3,
+        "extended_warranty_available": true,
+        "max_insurance_years": 7
+      },
+      "features": ["WiFi Connect", "Auto Door Open", "Power Dry", "Child Lock"]
+    },
+    {
+      "model_number": "DW-1890",
+      "series": "Compact",
+      "capacity": "9 place settings",
+      "energy_efficiency": "A++",
+      "release_year": 2020,
+      "insurance_years": {
+        "standard_warranty": 2,
+        "extended_warranty_available": false,
+        "max_insurance_years": 2
+      },
+      "features": ["Space Saving", "Quick Wash", "LED Display"]
+    },
+    {
+      "model_number": "DW-4200X",
+      "series": "Professional",
+      "capacity": "16 place settings",
+      "energy_efficiency": "A+++",
+      "release_year": 2023,
+      "insurance_years": {
+        "standard_warranty": 3,
+        "extended_warranty_available": true,
+        "max_insurance_years": 8
+      },
+      "features": ["Triple Zone", "Steam Clean", "Smart Diagnosis", "Quiet Operation"]
+    },
+    {
+      "model_number": "DW-2750",
+      "series": "Standard",
+      "capacity": "13 place settings",
+      "energy_efficiency": "A+",
+      "release_year": 2019,
+      "insurance_years": {
+        "standard_warranty": 2,
+        "extended_warranty_available": true,
+        "max_insurance_years": 4
+      },
+      "features": ["Multi Wash Programs", "Salt Indicator", "Rinse Aid Alert"]
+    },
+    {
+      "model_number": "DW-5120",
+      "series": "Smart Home",
+      "capacity": "14 place settings",
+      "energy_efficiency": "A+++",
+      "release_year": 2024,
+      "insurance_years": {
+        "standard_warranty": 4,
+        "extended_warranty_available": true,
+        "max_insurance_years": 10
+      },
+      "features": ["Voice Control", "App Control", "AI Wash Detection", "Self Cleaning"]
+    },
+    {
+      "model_number": "DW-3320",
+      "series": "Eco",
+      "capacity": "12 place settings",
+      "energy_efficiency": "A++++",
+      "release_year": 2023,
+      "insurance_years": {
+        "standard_warranty": 3,
+        "extended_warranty_available": true,
+        "max_insurance_years": 6
+      },
+      "features": ["Low Water Consumption", "Eco Mode", "Quick Eco Wash"]
+    },
+    {
+      "model_number": "DW-4600",
+      "series": "Family",
+      "capacity": "15 place settings",
+      "energy_efficiency": "A++",
+      "release_year": 2022,
+      "insurance_years": {
+        "standard_warranty": 2,
+        "extended_warranty_available": true,
+        "max_insurance_years": 5
+      },
+      "features": ["Large Capacity", "Flexible Racking", "Intensive Wash", "Gentle Care"]
+    },
+    {
+      "model_number": "DW-2100",
+      "series": "Basic",
+      "capacity": "10 place settings",
+      "energy_efficiency": "A+",
+      "release_year": 2021,
+      "insurance_years": {
+        "standard_warranty": 1,
+        "extended_warranty_available": false,
+        "max_insurance_years": 1
+      },
+      "features": ["Simple Controls", "Basic Programs", "Compact Design"]
+    },
+    {
+      "model_number": "DW-5850",
+      "series": "Ultra Premium",
+      "capacity": "18 place settings",
+      "energy_efficiency": "A+++",
+      "release_year": 2024,
+      "insurance_years": {
+        "standard_warranty": 5,
+        "extended_warranty_available": true,
+        "max_insurance_years": 12
+      },
+      "features": ["Ultra Quiet", "Advanced Sensors", "Custom Wash Cycles", "Premium Materials"]
+    }
+  ],
+  "insurance_info": {
+    "standard_coverage": ["Parts and Labor", "Manufacturing Defects"],
+    "extended_coverage": ["Annual Maintenance", "Accidental Damage", "Power Surge Protection"],
+    "service_network": "Global Toshiba Service Centers",
+    "claim_process": "24/7 Online Portal + Phone Support"
+  },
+  "last_updated": "2024-04-25"
+}
+
+
+
+
+
+"""
+
+
+# 20 page tite: 
         result = await ask_llm("""
-        You are a real estate expert. Answer the following question based on the provided context.
-        give me dirct answer, never ask questions or say you need more context.
+        You are toshiba engineer, answer the following question based on the provided context.
         
-        Question: What is the best three projects in new cairo?
+        Question: How can I start: DW-GZ202?
+
+        Data source: 
+       
+
         """)
         print(result)
     

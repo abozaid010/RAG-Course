@@ -10,7 +10,7 @@
 # 2. Embeddings: Text converted to numerical vectors that capture semantic meaning
 # 3. Similarity Search: Finding documents most relevant to a query using vector distance
 # 4. ChromaDB: Open-source vector database optimized for AI applications
-#
+# meta_data: ex
 # WHY WE NEED THIS:
 # - Traditional keyword search is limited - it can't understand semantic meaning
 # - Vector search finds conceptually similar documents, not just keyword matches
@@ -35,6 +35,11 @@ collection = client.get_or_create_collection(
     name="projects"  # Collection name for storing real estate project documents
 )
 
+
+# This ensures we don't lose data if the script runs multiple times
+device_collection = client.get_or_create_collection(
+    name="devices"  # Collection name for storing device information
+)
 # Initialize the sentence transformer model
 # all-MiniLM-L6-v2 is a lightweight, fast model that converts text to 384-dimensional vectors
 # It's trained on large datasets and provides good balance between speed and quality
@@ -183,6 +188,9 @@ def query_projects(query, k=3):
     # Return the document texts (not metadata or embeddings)
     # These documents will be used as context for the LLM
     return results["documents"][0]
+
+
+
 
 
 def query_projects_json(query, k=3):

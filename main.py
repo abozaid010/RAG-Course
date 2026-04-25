@@ -85,7 +85,7 @@ async def ask(q: Query):
     - Non-blocking: Doesn't freeze the server while waiting for LLM response
     - Scalability: Can handle multiple concurrent requests efficiently
     - Performance: Better resource utilization under load
-    
+    1, 2, 3..
     RAG WORKFLOW STEPS:
     """
     
@@ -93,8 +93,17 @@ async def ask(q: Query):
     # Query the vector database to find the most relevant documents
     # This is the "R" in RAG - Retrieval
     # k=3 means we want the top 3 most relevant documents
-    docs = query_projects(q.question, k=3)
+    # json_data = """
     
+    # """
+    # pdf = ""    ""
+    
+
+    # vector_Db = ""
+
+
+    docs = query_projects(q.question, k=3)
+
     # WHY VECTOR SEARCH:
     # - Finds semantically similar documents, not just keyword matches
     # - Handles synonyms and related concepts
@@ -142,3 +151,5 @@ async def ask(q: Query):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
