@@ -195,10 +195,10 @@ def query_projects(query, k=3):
 
 def query_projects_json(query, k=3):
     """
-    Find most relevant real estate projects from data_sample.json using semantic search.
+    Find most relevant real estate projects from realestate_data_sample.json using semantic search.
     
     This function is specifically designed to work with the real estate project data
-    structure from data_sample.json, which contains detailed property information
+    structure from realestate_data_sample.json, which contains detailed property information
     including locations, prices, developers, and property types.
     
     PARAMETERS:
@@ -209,7 +209,7 @@ def query_projects_json(query, k=3):
         list: List of formatted project information as context for LLM
     
     HOW IT WORKS:
-    1. Load real estate projects from data_sample.json
+    1. Load real estate projects from realestate_data_sample.json
     2. Create searchable text content from each project
     3. Convert to embeddings and search for semantic similarity
     4. Return formatted project information
@@ -226,19 +226,19 @@ def query_projects_json(query, k=3):
     import os
     
     # Load the real estate data
-    data_file = os.path.join(os.path.dirname(__file__), 'data_sample.json')
+    data_file = os.path.join(os.path.dirname(__file__), 'realestate_data_sample.json')
     
     try:
         with open(data_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except FileNotFoundError:
-        return ["Error: data_sample.json file not found"]
+        return ["Error: realestate_data_sample.json file not found"]
     except json.JSONDecodeError:
-        return ["Error: Invalid JSON format in data_sample.json"]
+        return ["Error: Invalid JSON format in realestate_data_sample.json"]
     
     projects = data.get('projects', [])
     if not projects:
-        return ["No projects found in data_sample.json"]
+        return ["No projects found in realestate_data_sample.json"]
     
     # Create searchable documents from project data
     documents = []

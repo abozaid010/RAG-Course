@@ -47,7 +47,7 @@ RAG-Course/
 ├── prompt.py           # Prompt engineering for RAG
 ├── load_data.py        # Data ingestion script
 ├── requirements.txt    # Python dependencies
-├── data_sample.json    # Sample real estate data
+├── realestate_data_sample.json    # Sample real estate data
 └── README.md          # This tutorial file
 ```
 
