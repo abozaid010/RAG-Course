@@ -1,5 +1,5 @@
 from langchain_deepseek import ChatDeepSeek
-from langchain.agents import AgentExecutor, create_openai_tools_agent
+from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import tool
 from langchain_core.runnables.history import RunnableWithMessageHistory
@@ -18,7 +18,7 @@ class RAGAgent:
             model=settings.DEEPSEEK_MODEL,
             api_key=settings.DEEPSEEK_API_KEY,
             temperature=0
-        ) 
+        )
         self.tools = [search_knowledge_base]
         self.memory_store = {}
         self.agent_executor = self._create_executor()
@@ -31,7 +31,7 @@ class RAGAgent:
             ("human", "{input}"),
             MessagesPlaceholder(variable_name="agent_scratchpad"),
         ])
-        agent = create_openai_tools_agent(self.llm, self.tools, prompt)
+        agent = create_tool_calling_agent(self.llm, self.tools, prompt)
         return AgentExecutor(agent=agent, tools=self.tools)
 
     def _get_session_history(self, session_id: str):
