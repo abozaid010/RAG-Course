@@ -18,14 +18,15 @@ class RAGAgent:
             model=settings.DEEPSEEK_MODEL,
             api_key=settings.DEEPSEEK_API_KEY,
             temperature=0
-        )
+        ) 
         self.tools = [search_knowledge_base]
         self.memory_store = {}
         self.agent_executor = self._create_executor()
 
     def _create_executor(self):
         prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are a helpful real estate assistant. Use the tool to find information."),
+            ("system", "You are a helpful real estate assistant. Use the tool to find information about real estate projects."),
+            ("system", f"extract unit specs, and meta data from user question;"),
             MessagesPlaceholder(variable_name="chat_history"),
             ("human", "{input}"),
             MessagesPlaceholder(variable_name="agent_scratchpad"),

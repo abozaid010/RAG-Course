@@ -16,7 +16,7 @@ class KnowledgeRetriever:
     def search(self, query: str):
         results = self.vector_store.similarity_search(
             query, 
-            k=settings.TOP_K
+            k=settings.TOP_K,
         )
         return "\n\n".join([doc.page_content for doc in results])
 
